@@ -7,9 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
-    <script src="assets/javascript/game.js"></script>
+    
 </head>
 <body>
-    
+    <h1>Hangman!</h1>
+    <h3>Press any key to get started. The theme is Harry Potter's school and houses.</h3>
+    <p id="guesses">Guesses Left: <span id="guesses-left"></span></p>
+	<h4 id="word-blank"></h4>
+	<div id="zero"></div>
+	<p>Wrong Guesses: <span id="wrong-guesses"></span></p>
+	<p id="wins">Wins: <span id="win-counter"></span></p>
+	<p id="loss">Losses: <span id="loss-counter"></span></p>
+		
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
