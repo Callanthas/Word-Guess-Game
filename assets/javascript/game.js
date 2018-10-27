@@ -32,7 +32,6 @@ function beginGame(){
 	};
 	console.log(wordPicked);
 	console.log(amountBlanks);
-	console.log(correct);
 
 	document.getElementById("guesses-left").innerHTML = remainingGuesses;
 	document.getElementById("word-blank").innerHTML = correct.join(" ");
@@ -45,20 +44,16 @@ function checkLetters(letter){
 	for (var i = 0; i < amountBlanks; i++){
 
 		if (wordPicked[i] === letter){
-
 			letterInWord = true;
 		}
 	};
 
 	if (letterInWord){
-
 		for (var i = 0; i < amountBlanks; i++){
-
 		if (wordPicked[i] === letter){
-
 			correct[i] = letter;
-		}
-		}
+				}
+			}
     }
     else{
 		remainingGuesses --;
@@ -86,7 +81,7 @@ function checkLetters(letter){
     }
     else if (remainingGuesses === 1){
 		document.getElementById("zero").innerHTML = '<img id="one" src="assets/images/huit.png">'
-    }
+		}
 	};
 
 
@@ -105,6 +100,7 @@ function roundFinished(){
 		wrongGuesses = [];
 		document.getElementById("wrong-guesses").innerHTML = wrongGuesses.join(" ");
 		beginGame();
+		
 	}else if (remainingGuesses === 0) {
 
 		document.getElementById("wrong-guesses").innerHTML = wrongGuesses.join(" ");

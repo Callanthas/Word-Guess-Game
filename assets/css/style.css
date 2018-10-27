@@ -1,10 +1,8 @@
 body {
-
 	background-color: darkblue;
 }
 
 h1 {
-
 	color: gold;
 	text-align: center;
     margin-top: 50px;
@@ -13,14 +11,12 @@ h1 {
 }
 
 p {
-
 	color: white;
 	text-align: center;
 	font-size: 25px;
 }
 
 span {
-
 	color: white;
 }
 
@@ -31,19 +27,16 @@ h3 {
 }
 
 #wins {
-
 	float: left;
 	padding-left: 300px;
 }
 
 #loss {
-
 	float: right;
 	padding-right: 300px;
 }
 
 #guesses {
-
 	padding-top: 30px;
 }
 
@@ -54,9 +47,6 @@ h3 {
 }
 
 #zero {
-
 	position: relative;
-	left: 660px;
-
-	
+	text-align:center;
 }
